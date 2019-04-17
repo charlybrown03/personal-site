@@ -14,8 +14,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0"
+    "nuxt": "^2.6.0",
+    "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",

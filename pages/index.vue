@@ -1,34 +1,39 @@
 <template>
   <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        personal-site
-      </h1>
-      <h2 class="subtitle">
-        My personal site
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
-    </div>
+    <font-awesome-icon :icon="faGithub" />
+    <font-awesome-icon :icon="faFacebook" />
+    <font-awesome-icon :icon="faLinkedin" />
+    <font-awesome-icon :icon="faInstagram" />
+    <font-awesome-icon :icon="faTwitter" />
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import {
+  faGithub,
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+  faTwitter
+} from '@fortawesome/free-brands-svg-icons'
 
 export default {
-  components: {
-    Logo
+  computed: {
+    faGithub() {
+      return faGithub
+    },
+    faFacebook() {
+      return faFacebook
+    },
+    faLinkedin() {
+      return faLinkedin
+    },
+    faInstagram() {
+      return faInstagram
+    },
+    faTwitter() {
+      return faTwitter
+    }
   }
 }
 </script>
