@@ -6,7 +6,7 @@
       :href="icon.href"
       target="_blank"
     >
-      <font-awesome-icon :icon="icon.icon" />
+      <font-awesome-icon class="fa-3x" :icon="icon.icon" />
     </a>
   </div>
 </template>
@@ -50,7 +50,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  max-width: 500px;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
 .fa {
   &-facebook-f {
     color: $color-chambray;
