@@ -53,19 +53,23 @@ export default {
 <style lang="scss">
 .fa {
   &-facebook-f {
-    color: #3b5999;
+    color: $color-chambray;
   }
 
   &-instagram {
-    color: #e4405f;
+    color: $color-cerise-red;
+  }
+
+  &-github {
+    color: $color-black;
   }
 
   &-twitter {
-    color: #55acee;
+    color: $color-picton-blue;
   }
 
   &-linkedin-in {
-    color: #0077b5;
+    color: $color-deep-cerulean;
   }
 }
 </style>
