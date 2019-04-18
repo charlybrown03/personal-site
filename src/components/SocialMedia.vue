@@ -1,38 +1,50 @@
 <template>
   <div class="social-media">
-    <font-awesome-icon :icon="faFacebookF" />
-    <font-awesome-icon :icon="faInstagram" />
-    <font-awesome-icon :icon="faGithub" />
-    <font-awesome-icon :icon="faTwitter" />
-    <font-awesome-icon :icon="faLinkedinIn" />
+    <a
+      v-for="(icon, index) in icons"
+      :key="index"
+      :href="icon.href"
+      target="_blank"
+    >
+      <font-awesome-icon :icon="icon.icon" />
+    </a>
   </div>
 </template>
 
 <script>
 import {
-  faGithub,
   faFacebookF,
-  faLinkedinIn,
+  faGithub,
   faInstagram,
+  faLinkedinIn,
   faTwitter
 } from '@fortawesome/free-brands-svg-icons'
 
 export default {
   computed: {
-    faGithub() {
-      return faGithub
-    },
-    faFacebookF() {
-      return faFacebookF
-    },
-    faLinkedinIn() {
-      return faLinkedinIn
-    },
-    faInstagram() {
-      return faInstagram
-    },
-    faTwitter() {
-      return faTwitter
+    icons() {
+      return [
+        {
+          href: 'https://www.facebook.com/cmorenovillodre',
+          icon: faFacebookF
+        },
+        {
+          href: 'https://www.instagram.com/charlybrown_03/',
+          icon: faInstagram
+        },
+        {
+          href: 'https://github.com/charlybrown03/',
+          icon: faGithub
+        },
+        {
+          href: 'https://twitter.com/charly_brown_03',
+          icon: faTwitter
+        },
+        {
+          href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
+          icon: faLinkedinIn
+        }
+      ]
     }
   }
 }
