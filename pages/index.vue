@@ -1,39 +1,15 @@
 <template>
   <section class="container">
-    <font-awesome-icon :icon="faGithub" />
-    <font-awesome-icon :icon="faFacebook" />
-    <font-awesome-icon :icon="faLinkedin" />
-    <font-awesome-icon :icon="faInstagram" />
-    <font-awesome-icon :icon="faTwitter" />
+    <SocialMedia />
   </section>
 </template>
 
 <script>
-import {
-  faGithub,
-  faFacebook,
-  faLinkedin,
-  faInstagram,
-  faTwitter
-} from '@fortawesome/free-brands-svg-icons'
+import SocialMedia from '@/components/SocialMedia'
 
 export default {
-  computed: {
-    faGithub() {
-      return faGithub
-    },
-    faFacebook() {
-      return faFacebook
-    },
-    faLinkedin() {
-      return faLinkedin
-    },
-    faInstagram() {
-      return faInstagram
-    },
-    faTwitter() {
-      return faTwitter
-    }
+  components: {
+    SocialMedia
   }
 }
 </script>
