@@ -9,11 +9,11 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: 'Carlos Moreno Villodre',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'description', name: 'description', content: 'Personal Website' },
     ],
     link: [ { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' } ],
   },
@@ -47,7 +47,21 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [ 'nuxt-fontawesome', '@nuxtjs/style-resources' ],
+  modules: [
+    'nuxt-fontawesome',
+    '@nuxtjs/style-resources',
+    [ 'nuxt-i18n',
+      {
+        defaultLocale: 'es',
+        langDir: 'languages/',
+        lazy: true,
+        seo: false,
+        locales: [
+          { code: 'es', iso: 'es-ES', file: 'es/index.js' },
+        ],
+      },
+    ],
+  ],
 
   /*
    ** Build configuration

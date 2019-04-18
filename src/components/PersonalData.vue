@@ -5,8 +5,8 @@
       class="personal-data__image"
       alt="Personal image"
     >
-    <h1 class="personal-data__title" v-text="'Carlos Moreno Villodre'" />
-    <h2 class="personal-data__subtitle" v-text="'FrontEnd Developer'" />
+    <h1 class="personal-data__title" v-text="$t('home.title')" />
+    <h2 class="personal-data__subtitle" v-text="$t('home.subtitle')" />
   </div>
 </template>
 
