@@ -32,7 +32,11 @@ export default {
    ** Global SCSS
    */
   styleResources: {
-    scss: [ '@/assets/scss/_variables.scss' ],
+    scss: [
+      '@/assets/scss/_variables.scss',
+      '@/assets/scss/_bitter-loader.scss',
+      '@/assets/scss/_font-weight.scss',
+    ],
   },
 
   /*

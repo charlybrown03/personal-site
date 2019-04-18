@@ -1,0 +1,23 @@
+@import "~assets/scss/font-face";
+
+@include font-face(
+  "Bitter",
+  "~static/fonts/Bitter-Regular",
+  $weight: 400,
+  $style: null,
+  $exts: ttf
+);
+@include font-face(
+  "Bitter",
+  "~static/fonts/Bitter-Bold",
+  $weight: 900,
+  $style: null,
+  $exts: ttf
+);
+@include font-face(
+  "Bitter",
+  "~static/fonts/Bitter-Italic",
+  $weight: null,
+  $style: italic,
+  $exts: ttf
+);

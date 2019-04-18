@@ -1,14 +1,17 @@
 <template>
   <section class="container">
+    <personal-data />
     <social-media />
   </section>
 </template>
 
 <script>
+import PersonalData from '@/components/PersonalData'
 import SocialMedia from '@/components/SocialMedia'
 
 export default {
   components: {
+    PersonalData,
     SocialMedia,
   },
 }
@@ -16,33 +19,11 @@ export default {
 
 <style>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1.5rem;
   align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
