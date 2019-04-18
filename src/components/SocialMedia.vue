@@ -17,36 +17,36 @@ import {
   faGithub,
   faInstagram,
   faLinkedinIn,
-  faTwitter
+  faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
 export default {
   computed: {
-    icons() {
+    icons () {
       return [
         {
           href: 'https://www.facebook.com/cmorenovillodre',
-          icon: faFacebookF
+          icon: faFacebookF,
         },
         {
           href: 'https://www.instagram.com/charlybrown_03/',
-          icon: faInstagram
+          icon: faInstagram,
         },
         {
           href: 'https://github.com/charlybrown03/',
-          icon: faGithub
+          icon: faGithub,
         },
         {
           href: 'https://twitter.com/charly_brown_03',
-          icon: faTwitter
+          icon: faTwitter,
         },
         {
           href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
-          icon: faLinkedinIn
-        }
+          icon: faLinkedinIn,
+        },
       ]
-    }
-  }
+    },
+  },
 }
 </script>
 

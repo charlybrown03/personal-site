@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <SocialMedia />
+    <social-media />
   </section>
 </template>
 
@@ -9,8 +9,8 @@ import SocialMedia from '@/components/SocialMedia'
 
 export default {
   components: {
-    SocialMedia
-  }
+    SocialMedia,
+  },
 }
 </script>
 
