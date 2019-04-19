@@ -41,6 +41,8 @@
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
     "sass-loader": "^7.1.0",
+    "shipit-cli": "^4.2.0",
+    "shipit-deploy": "^4.1.4",
     "vue-jest": "^3.0.3"
   }
 }
