@@ -14,6 +14,12 @@ export default {
     PersonalData,
     SocialMedia,
   },
+
+  nuxtI18n: {
+    paths: {
+      es: '/',
+    },
+  },
 }
 </script>
 

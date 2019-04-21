@@ -13,7 +13,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Personal Website' },
     ],
-    link: [ { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' } ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'canonical', href: 'https://www.carlosmoreno.dev/' },
+    ],
   },
 
   /*
@@ -59,7 +62,16 @@ export default {
         ],
       },
     ],
+    '@nuxtjs/sitemap',
   ],
+
+  /*
+   ** Sitemap configuration
+   */
+  sitemap: {
+    hostname: 'https://www.carlosmoreno.dev',
+    gzip: true,
+  },
 
   /*
    ** Build configuration
