@@ -51,6 +51,12 @@ export default {
   modules: [
     'nuxt-fontawesome',
     '@nuxtjs/style-resources',
+    [ '@nuxtjs/google-analytics', {
+      id: 'UA-120657145-2',
+    } ],
+    [ '@nuxtjs/google-tag-manager', {
+      id: 'GTM-WVG6XJX',
+    } ],
     [ 'nuxt-i18n',
       {
         defaultLocale: 'es',
