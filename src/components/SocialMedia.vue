@@ -3,11 +3,15 @@
     <a
       v-for="(icon, index) in icons"
       :key="index"
+      :aria-label="icon.alt"
       :href="icon.href"
       target="_blank"
       rel="noopener"
     >
-      <font-awesome-icon class="fa-3x" :icon="icon.icon" />
+      <font-awesome-icon
+        class="fa-3x"
+        :icon="icon.icon"
+      />
     </a>
   </div>
 </template>
@@ -28,22 +32,27 @@ export default {
         {
           href: 'https://www.facebook.com/cmorenovillodre',
           icon: faFacebookF,
+          alt: 'Facebook',
         },
         {
           href: 'https://www.instagram.com/charlybrown_03/',
           icon: faInstagram,
+          alt: 'Instagram',
         },
         {
           href: 'https://github.com/charlybrown03/',
           icon: faGithub,
+          alt: 'Github',
         },
         {
           href: 'https://twitter.com/charly_brown_03',
           icon: faTwitter,
+          alt: 'Twitter',
         },
         {
           href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
           icon: faLinkedinIn,
+          alt: 'LinkenIn',
         },
       ]
     },
