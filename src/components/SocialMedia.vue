@@ -5,6 +5,7 @@
       :key="index"
       :href="icon.href"
       target="_blank"
+      rel="noopener"
     >
       <font-awesome-icon class="fa-3x" :icon="icon.icon" />
     </a>
