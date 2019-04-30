@@ -50,6 +50,7 @@ export default {
    */
   modules: [
     'nuxt-fontawesome',
+    'nuxt-imagemin',
     '@nuxtjs/style-resources',
     [ '@nuxtjs/google-analytics', {
       id: 'UA-120657145-2',
