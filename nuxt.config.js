@@ -103,11 +103,7 @@ export default {
       }
 
       if (!isDev) {
-        config.plugins.push(new CompressionPlugin({
-          filename: '[path].gz[query]',
-          algorithm: 'gzip',
-          test: /\.(js|css)$/,
-        }))
+        config.plugins.push(new CompressionPlugin())
       }
     },
   },
