@@ -1,3 +1,5 @@
+import CompressionPlugin from 'compression-webpack-plugin'
+
 export default {
   mode: 'universal',
 
@@ -89,15 +91,23 @@ export default {
      */
     extractCSS: true,
 
-    extend (config, ctx) {
+    extend (config, { isDev, isClient }) {
       // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
+      if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
         })
+      }
+
+      if (!isDev) {
+        config.plugins.push(new CompressionPlugin({
+          filename: '[path].gz[query]',
+          algorithm: 'gzip',
+          test: /\.(js|css)$/,
+        }))
       }
     },
   },
