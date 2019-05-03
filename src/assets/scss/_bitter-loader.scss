@@ -2,22 +2,22 @@
 
 @include font-face(
   "Bitter",
-  "~static/fonts/Bitter-Regular",
+  "~assets/fonts/bitter-v14-latin-regular",
   $weight: 400,
   $style: null,
-  $exts: ttf
+  $exts: eot woff2 woff ttf svg
 );
 @include font-face(
   "Bitter",
-  "~static/fonts/Bitter-Bold",
-  $weight: 900,
+  "~assets/fonts/bitter-v14-latin-700",
+  $weight: 700,
   $style: null,
-  $exts: ttf
+  $exts: eot woff2 woff ttf svg
 );
 @include font-face(
   "Bitter",
-  "~static/fonts/Bitter-Italic",
+  "~assets/fonts/bitter-v14-latin-italic",
   $weight: null,
   $style: italic,
-  $exts: ttf
+  $exts: eot woff2 woff ttf svg
 );
