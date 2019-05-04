@@ -7,6 +7,7 @@
       :href="icon.href"
       target="_blank"
       rel="noopener"
+      :class="`gtm_${icon.gtmTag}`"
     >
       <font-awesome-icon
         class="fa-3x"
@@ -33,26 +34,31 @@ export default {
           href: 'https://www.facebook.com/cmorenovillodre',
           icon: faFacebookF,
           alt: 'Facebook',
+          gtmTag: 'facebook',
         },
         {
           href: 'https://www.instagram.com/charlybrown_03/',
           icon: faInstagram,
           alt: 'Instagram',
+          gtmTag: 'instagram',
         },
         {
           href: 'https://github.com/charlybrown03/',
           icon: faGithub,
           alt: 'Github',
+          gtmTag: 'github',
         },
         {
           href: 'https://twitter.com/charly_brown_03',
           icon: faTwitter,
           alt: 'Twitter',
+          gtmTag: 'twitter',
         },
         {
           href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
           icon: faLinkedinIn,
           alt: 'LinkenIn',
+          gtmTag: 'linkedin',
         },
       ]
     },
