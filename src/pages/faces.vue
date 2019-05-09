@@ -9,7 +9,7 @@
         v-text="`Hi, I'm a ${face}`"
       />
       <img
-        :src="require(`@/assets/images/lego/${padNumber(index + 1)}-${face}.svg`)"
+        v-lazy="require(`@/assets/images/lego/${padNumber(index + 1)}-${face}.svg`)"
         :class="[ 'face__image', `face__${face.replace(/\s/g, '-')}` ]"
         :alt="`Hi, I'm a ${face}`"
       >
