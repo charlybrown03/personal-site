@@ -78,6 +78,11 @@ export default {
   &__image {
     width: 2rem;
     height: 2rem;
+
+    &[lazy="loading"] {
+      opacity: 1;
+      filter: blur(10px);
+    }
   }
 }
 </style>

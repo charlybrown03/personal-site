@@ -50,4 +50,17 @@ html {
   text-align: center;
   min-height: 100vh;
 }
+
+img {
+  transition: all ease .3s;
+  opacity: 0;
+
+  &[lazy="loading"] {
+    opacity: 1;
+    filter: blur(15px);
+  }
+  &[lazy="loaded"] {
+    opacity: 1;
+  }
+}
 </style>

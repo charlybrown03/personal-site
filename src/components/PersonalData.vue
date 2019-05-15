@@ -4,7 +4,7 @@
       <source srcset="~/assets/images/profile.webp" type="image/webp">
       <source srcset="~/assets/images/profile.jpeg" type="image/jpeg">
       <img
-        src="~/assets/images/profile.jpeg"
+        v-lazy="require('~/assets/images/profile.jpeg')"
         class="personal-data__image"
         alt="Personal image"
       >
