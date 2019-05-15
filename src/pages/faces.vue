@@ -10,7 +10,7 @@
       />
       <img
         v-lazy="require(`@/assets/images/lego/${padNumber(index + 1)}-${face}.svg`)"
-        :class="[ 'face__image', `face__${face.replace(/\s/g, '-')}` ]"
+        :class="[ 'face__image', `face__${face.replace(/\s/g, '-').toLowerCase()}` ]"
         :alt="`Hi, I'm a ${face}`"
       >
     </div>
@@ -66,8 +66,9 @@ export default {
 .face {
   display: flex;
   flex-direction: column;
-  width: 10rem;
+  width: 5rem;
   align-items: center;
+  justify-content: space-between;
   margin: 2rem;
 
   &__text {
