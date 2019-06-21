@@ -85,3 +85,6 @@ sw.*
 
 # MacOS
 .DS_Store
+
+# @nuxtjs/pwa files
+sw.*

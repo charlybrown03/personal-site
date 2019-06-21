@@ -57,6 +57,8 @@ export default {
     'nuxt-fontawesome',
     'nuxt-imagemin',
     '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap',
+    [ '@nuxtjs/pwa', { icon: false } ],
     [ '@nuxtjs/google-analytics', {
       id: 'UA-120657145-2',
     } ],
@@ -74,7 +76,6 @@ export default {
         ],
       },
     ],
-    '@nuxtjs/sitemap',
   ],
 
   /*
