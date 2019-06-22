@@ -78,23 +78,23 @@ export default {
 
 .fa {
   &-facebook-f {
-    color: $color-chambray;
+    @include icon-mixin($color-chambray);
   }
 
   &-instagram {
-    color: $color-cerise-red;
+    @include icon-mixin($color-cerise-red);
   }
 
   &-github {
-    color: $color-black;
+    @include icon-mixin($color-black);
   }
 
   &-twitter {
-    color: $color-picton-blue;
+    @include icon-mixin($color-picton-blue);
   }
 
   &-linkedin-in {
-    color: $color-deep-cerulean;
+    @include icon-mixin($color-deep-cerulean);
   }
 }
 </style>

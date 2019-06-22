@@ -40,6 +40,7 @@ export default {
     scss: [
       '@/assets/scss/_variables.scss',
       '@/assets/scss/_font-weight.scss',
+      '@/assets/scss/_icon-mixin.scss',
     ],
   },
 
