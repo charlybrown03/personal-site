@@ -59,7 +59,7 @@ export default {
     'nuxt-imagemin',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap',
-    [ '@nuxtjs/pwa', { icon: false } ],
+    [ '@nuxtjs/pwa' ],
     [ '@nuxtjs/google-analytics', {
       id: 'UA-120657145-2',
     } ],
