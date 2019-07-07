@@ -4,7 +4,7 @@
       <source srcset="~/assets/images/profile.webp" type="image/webp">
       <source srcset="~/assets/images/profile.jpeg" type="image/jpeg">
       <img
-        v-lazy="require('~/assets/images/profile.jpeg')"
+        src="~/assets/images/profile.jpeg"
         class="personal-data__image"
         alt="Personal image"
       >
@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .personal-data {
   width: 100%;
 

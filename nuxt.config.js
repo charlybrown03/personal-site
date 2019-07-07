@@ -101,6 +101,14 @@ export default {
      */
     extractCSS: true,
 
+    postcss: {
+      preset: {
+        autoprefixer: {
+          browsers: [ 'last 2 versions', 'ie >= 9' ],
+        },
+      },
+    },
+
     extend (config, { isDev, isClient }) {
       // Run ESLint on save
       if (isDev && isClient) {
