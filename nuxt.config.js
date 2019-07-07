@@ -55,7 +55,12 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    'nuxt-fontawesome',
+    [ 'nuxt-fontawesome', {
+      imports: [ {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: [ 'faFacebookF', 'faGithub', 'faInstagram', 'faLinkedinIn', 'faTwitter' ],
+      } ],
+    } ],
     'nuxt-imagemin',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap',

@@ -18,45 +18,37 @@
 </template>
 
 <script>
-import {
-  faFacebookF,
-  faGithub,
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons'
-
 export default {
   computed: {
     icons () {
       return [
         {
           href: 'https://www.facebook.com/cmorenovillodre',
-          icon: faFacebookF,
+          icon: [ 'fab', 'facebook-f' ],
           alt: 'Facebook',
           gtmTag: 'facebook',
         },
         {
           href: 'https://www.instagram.com/charlybrown_03/',
-          icon: faInstagram,
+          icon: [ 'fab', 'instagram' ],
           alt: 'Instagram',
           gtmTag: 'instagram',
         },
         {
           href: 'https://github.com/charlybrown03/',
-          icon: faGithub,
+          icon: [ 'fab', 'github' ],
           alt: 'Github',
           gtmTag: 'github',
         },
         {
           href: 'https://twitter.com/charly_brown_03',
-          icon: faTwitter,
+          icon: [ 'fab', 'twitter' ],
           alt: 'Twitter',
           gtmTag: 'twitter',
         },
         {
           href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
-          icon: faLinkedinIn,
+          icon: [ 'fab', 'linkedin-in' ],
           alt: 'LinkenIn',
           gtmTag: 'linkedin',
         },
