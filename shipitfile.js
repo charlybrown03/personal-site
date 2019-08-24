@@ -17,7 +17,7 @@ module.exports = shipit => {
   })
 
   shipit.blTask('build', async () => {
-    await shipit.local('npm i', { cwd: shipit.workspace })
+    await shipit.local('npm ci', { cwd: shipit.workspace })
     await shipit.local('npm run generate', { cwd: shipit.workspace })
   })
 }
