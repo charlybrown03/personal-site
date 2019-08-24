@@ -64,7 +64,11 @@ export default {
     'nuxt-imagemin',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap',
-    [ '@nuxtjs/pwa' ],
+    [ '@nuxtjs/pwa', {
+      meta: {
+        name: 'Carlos Moreno Villodre',
+      },
+    } ],
     [ '@nuxtjs/google-analytics', {
       id: 'UA-120657145-2',
     } ],
