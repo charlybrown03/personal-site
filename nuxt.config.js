@@ -108,7 +108,6 @@ export default {
     postcss: {
       preset: {
         autoprefixer: {
-          browsers: [ 'last 2 versions', 'ie >= 9' ],
         },
       },
     },
