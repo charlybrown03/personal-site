@@ -65,8 +65,9 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap',
     [ '@nuxtjs/pwa', {
-      meta: {
+      manifest: {
         name: 'Carlos Moreno Villodre',
+        lang: 'es',
       },
     } ],
     [ '@nuxtjs/google-analytics', {
