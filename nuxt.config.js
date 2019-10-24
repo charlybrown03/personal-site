@@ -18,6 +18,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'canonical', href: 'https://www.carlosmoreno.dev/' },
+      { rel: 'preconnect', href: 'https://www.google-analytics.com', crossorigin: true },
     ],
   },
 
