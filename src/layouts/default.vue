@@ -5,21 +5,25 @@
 </template>
 
 <script>
+import { computed } from '@vue/composition-api'
+
 export default {
+  setup () {
+    const currentIsoLocale = computed(({ $nuxt }) => {
+      const { locales, locale } = $nuxt.$i18n
+
+      return locales.find(l => l.code === locale).iso
+    })
+
+    return { currentIsoLocale }
+  },
+
   head () {
     return {
       htmlAttrs: {
         lang: this.currentIsoLocale,
       },
     }
-  },
-
-  computed: {
-    currentIsoLocale () {
-      const { locales, locale } = this.$nuxt.$i18n
-
-      return locales.find(l => l.code === locale).iso
-    },
   },
 }
 </script>

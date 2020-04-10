@@ -34,24 +34,22 @@
 </template>
 
 <script>
+import { ref } from '@vue/composition-api'
 import { lego } from '@/assets/images.json'
 export default {
   name: 'Faces',
 
-  data () {
-    return {
-      images: lego,
-    }
-  },
+  setup () {
+    const images = ref(lego)
 
-  methods: {
-    padNumber (number) {
+    function padNumber (number) {
       var s = String(number)
       while (s.length < 3) { s = '0' + s }
       return s
-    },
-  },
+    }
 
+    return { images, padNumber }
+  },
 }
 </script>
 

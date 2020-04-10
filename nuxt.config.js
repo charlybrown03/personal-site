@@ -50,6 +50,7 @@ export default {
    */
   plugins: [
     { src: '~/plugins/vue-lazyload', ssr: false },
+    { src: '~/plugins/vue-composition-api' },
   ],
 
   /*

@@ -8,6 +8,10 @@
 </template>
 
 <script>
+import { computed, ref } from '@vue/composition-api'
+
+const DEFAULT_TEXT = '¿Cómo llegar hasta mí?'
+
 export default {
   name: 'SelectorComponent',
 
@@ -18,17 +22,12 @@ export default {
     },
   },
 
-  data () {
-    return {
-      defaultText: '¿Cómo llegar hasta mí?',
-      isDefault: true,
-    }
-  },
+  setup (props) {
+    const isDefault = ref(true)
 
-  computed: {
-    computedText () {
-      return this.isDefault ? this.defaultText : this.selector
-    },
+    const computedText = computed(() => isDefault.value ? DEFAULT_TEXT : props.selector)
+
+    return { computedText, isDefault }
   },
 }
 </script>
