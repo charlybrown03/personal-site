@@ -71,9 +71,6 @@ export default {
         lang: 'es',
       },
     } ],
-    [ '@nuxtjs/google-analytics', {
-      id: 'UA-120657145-2',
-    } ],
     [ '@nuxtjs/google-tag-manager', {
       id: 'GTM-WVG6XJX',
     } ],
