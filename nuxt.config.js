@@ -1,5 +1,3 @@
-import CompressionPlugin from 'compression-webpack-plugin'
-
 export default {
   mode: 'universal',
 
@@ -65,12 +63,6 @@ export default {
     'nuxt-imagemin',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap',
-    [ '@nuxtjs/pwa', {
-      manifest: {
-        name: 'Carlos Moreno Villodre',
-        lang: 'es',
-      },
-    } ],
     [ '@nuxtjs/google-tag-manager', {
       id: 'GTM-WVG6XJX',
     } ],
@@ -120,10 +112,6 @@ export default {
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
         })
-      }
-
-      if (!isDev) {
-        config.plugins.push(new CompressionPlugin())
       }
     },
   },

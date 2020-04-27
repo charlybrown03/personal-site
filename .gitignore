@@ -80,11 +80,5 @@ dist
 # IDE
 .idea
 
-# Service worker
-sw.*
-
 # MacOS
 .DS_Store
-
-# @nuxtjs/pwa files
-sw.*
