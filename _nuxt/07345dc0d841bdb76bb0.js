@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{130:function(t,e,n){"use strict";n.r(e),e.default={title:"Carlos Moreno Villodre",subtitle:"Frontend Developer",icons:[{alt:"Facebook"},{alt:"Instagram"},{alt:"Github"},{alt:"Twitter"},{alt:"LinkenIn"}]}}}]);
