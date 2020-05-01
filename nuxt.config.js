@@ -1,3 +1,7 @@
+const pkg = require('./package.json')
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const router = process.env.DEPLOY_ENV === 'GH_PAGES' ? { base: `/${pkg.name}/` } : {}
+
 export default {
   mode: 'universal',
 
@@ -86,6 +90,11 @@ export default {
     hostname: 'https://www.carlosmoreno.dev',
     gzip: true,
   },
+
+  /*
+   ** Router configuration
+   */
+  router,
 
   /*
    ** Build configuration
