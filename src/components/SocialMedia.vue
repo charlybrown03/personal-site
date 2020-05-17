@@ -7,7 +7,7 @@
       :href="icon.href"
       target="_blank"
       rel="noopener"
-      :class="`gtm_${icon.gtmTag}`"
+      @click="onClickLink(icon.eventLabel)"
     >
       <font-awesome-icon
         class="fa-3x"
@@ -18,41 +18,21 @@
 </template>
 
 <script>
+import icons from './socialIcons.json'
+
 export default {
-  computed: {
-    icons () {
-      return [
-        {
-          href: 'https://www.facebook.com/cmorenovillodre',
-          icon: [ 'fab', 'facebook-f' ],
-          alt: 'Facebook',
-          gtmTag: 'facebook',
-        },
-        {
-          href: 'https://www.instagram.com/charlybrown_03/',
-          icon: [ 'fab', 'instagram' ],
-          alt: 'Instagram',
-          gtmTag: 'instagram',
-        },
-        {
-          href: 'https://github.com/charlybrown03/',
-          icon: [ 'fab', 'github' ],
-          alt: 'Github',
-          gtmTag: 'github',
-        },
-        {
-          href: 'https://twitter.com/charly_brown_03',
-          icon: [ 'fab', 'twitter' ],
-          alt: 'Twitter',
-          gtmTag: 'twitter',
-        },
-        {
-          href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
-          icon: [ 'fab', 'linkedin-in' ],
-          alt: 'LinkenIn',
-          gtmTag: 'linkedin',
-        },
-      ]
+  data () {
+    return { icons }
+  },
+
+  methods: {
+    onClickLink (eventLabel) {
+      this.$gtm.pushEvent({
+        event: 'gaEvent',
+        eventAction: 'Click Link',
+        eventCategory: 'Social Link',
+        eventLabel,
+      })
     },
   },
 }
