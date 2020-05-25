@@ -16,4 +16,4 @@ jobs:
         uses: actions/setup-node@v1.4.1
 
       - name: Run tests
-        run: npm test
+        run: npm install && npm test
