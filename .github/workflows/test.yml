@@ -1,0 +1,19 @@
+name: Run tests
+
+on:
+  pull_request:
+    branch:
+      - 'master'
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v1.4.1
+
+      - name: Run tests
+        run: npm test
