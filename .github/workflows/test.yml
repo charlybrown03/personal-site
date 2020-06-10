@@ -5,6 +5,13 @@ on:
     branch:
       - 'master'
 
+curl_args: |
+            -X POST \
+            http://purge.jsdelivr.net/ \
+            -H 'cache-control: no-cache' \
+            -H 'content-type: application/json' \
+            -d '{"path": ["/npm/@holaluz/kalimotxo@latest/dist/kalimotxo.umd.min.js","/npm/@holaluz/kalimotxo@latest/dist/kalimotxo.css"]}'
+
 jobs:
   test:
 
@@ -12,8 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v1.4.1
-
-      - name: Run tests
-        run: npm install && npm test
+      - name: Purge jsdelivr cache
+        uses: wei/curl@v1
+        with:
+          args: ${{ curl_args }}
