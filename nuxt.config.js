@@ -73,9 +73,7 @@ export default {
     [ 'nuxt-i18n',
       {
         defaultLocale: 'es',
-        langDir: 'languages/',
-        lazy: true,
-        seo: false,
+        vueI18nLoader: true,
         locales: [
           { code: 'es', iso: 'es-ES', file: 'es/index.js' },
         ],

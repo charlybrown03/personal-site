@@ -9,8 +9,8 @@
         alt="Personal image"
       >
     </picture>
-    <h1 class="personal-data__title" v-text="$t('home.title')" />
-    <h2 class="personal-data__subtitle" v-text="$t('home.subtitle')" />
+    <h1 class="personal-data__title" v-text="$t('title')" />
+    <h2 class="personal-data__subtitle" v-text="$t('subtitle')" />
   </div>
 </template>
 
@@ -36,3 +36,29 @@ export default {
   }
 }
 </style>
+
+<i18n lang="json5">
+{
+  es: {
+    title: "Carlos Moreno Villodre",
+    subtitle: "Frontend Developer",
+    icons: [
+      {
+        alt: "Facebook",
+      },
+      {
+        alt: "Instagram",
+      },
+      {
+        alt: "Github",
+      },
+      {
+        alt: "Twitter",
+      },
+      {
+        alt: "LinkenIn",
+      }
+    ]
+  }
+}
+</i18n>
