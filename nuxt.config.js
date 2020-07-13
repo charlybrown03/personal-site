@@ -75,7 +75,7 @@ export default {
         defaultLocale: 'es',
         vueI18nLoader: true,
         locales: [
-          { code: 'es', iso: 'es-ES', file: 'es/index.js' },
+          { code: 'es', iso: 'es-ES' },
         ],
       },
     ],
