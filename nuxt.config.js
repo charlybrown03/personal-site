@@ -1,7 +1,3 @@
-const pkg = require('./package.json')
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const router = process.env.DEPLOY_ENV === 'GH_PAGES' ? { base: `/${pkg.name}/` } : {}
-
 export default {
   target: 'static',
 
