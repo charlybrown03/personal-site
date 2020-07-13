@@ -86,11 +86,6 @@ export default {
   },
 
   /*
-   ** Router configuration
-   */
-  router,
-
-  /*
    ** Build configuration
    */
   build: {
