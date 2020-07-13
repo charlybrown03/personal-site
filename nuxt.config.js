@@ -71,8 +71,10 @@ export default {
     } ],
     [ 'nuxt-i18n',
       {
+        baseUrl: 'https://carlosmoreno.dev',
         defaultLocale: 'es',
         vueI18nLoader: true,
+        seo: true,
         locales: [
           { code: 'es', iso: 'es-ES' },
         ],
