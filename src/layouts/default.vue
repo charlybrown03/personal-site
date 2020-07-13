@@ -4,26 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.currentIsoLocale,
-      },
-    }
-  },
-
-  computed: {
-    currentIsoLocale () {
-      const { locales, locale } = this.$nuxt.$i18n
-
-      return locales.find(l => l.code === locale).iso
-    },
-  },
-}
-</script>
-
 <style lang="scss">
 html {
   font-family: "Bitter", sans-serif;

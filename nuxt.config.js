@@ -17,6 +17,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'canonical', href: 'https://www.carlosmoreno.dev/' },
       { rel: 'preconnect', href: 'https://www.google-analytics.com', crossorigin: true },
+      { rel: 'preload', href: '/fonts/bitter-v14-latin-regular.woff2' },
+      { rel: 'preload', href: '/fonts/bitter-v14-latin-700.woff2' },
+      { rel: 'preload', href: '/fonts/bitter-v14-latin-italic.woff2' },
     ],
   },
 
