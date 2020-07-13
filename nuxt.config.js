@@ -3,7 +3,7 @@ const pkg = require('./package.json')
 const router = process.env.DEPLOY_ENV === 'GH_PAGES' ? { base: `/${pkg.name}/` } : {}
 
 export default {
-  mode: 'universal',
+  target: 'static',
 
   srcDir: './src',
 
