@@ -16,7 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@nuxtjs/google-tag-manager": "^2.3.2",
     "cross-env": "^7.0.2",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "nuxt": "^2.13.3",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-i18n": "^6.13.1",
