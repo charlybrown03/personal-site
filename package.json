@@ -1,6 +1,5 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "personal-site",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
