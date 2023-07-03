@@ -1,13 +1,13 @@
 <template>
-  <div class="app">
-    <nuxt />
+  <div id="app">
+    <slot />
   </div>
 </template>
 
 <style lang="scss">
 html {
   font-family: "Bitter", sans-serif;
-  font-size: $rem-baseline;
+  font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -23,7 +23,7 @@ html {
   margin: 0;
 }
 
-.app {
+#app {
   display: flex;
   justify-content: center;
   align-items: center;

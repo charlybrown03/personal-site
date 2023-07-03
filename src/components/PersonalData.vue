@@ -1,3 +1,8 @@
+<script setup>
+const title = 'Carlos Moreno Villodre'
+const subtitle = 'Frontend Developer'
+</script>
+
 <template>
   <div class="personal-data">
     <picture>
@@ -9,16 +14,14 @@
         alt="Personal image"
       >
     </picture>
-    <h1 class="personal-data__title" v-text="$t('title')" />
-    <h2 class="personal-data__subtitle" v-text="$t('subtitle')" />
+    <h1 class="personal-data__title">
+      {{ title }}
+    </h1>
+    <h2 class="personal-data__subtitle">
+      {{ subtitle }}
+    </h2>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'PersonalData',
-}
-</script>
 
 <style lang="scss">
 .personal-data {
@@ -36,29 +39,3 @@ export default {
   }
 }
 </style>
-
-<i18n lang="json5">
-{
-  es: {
-    title: "Carlos Moreno Villodre",
-    subtitle: "Frontend Developer",
-    icons: [
-      {
-        alt: "Facebook",
-      },
-      {
-        alt: "Instagram",
-      },
-      {
-        alt: "Github",
-      },
-      {
-        alt: "Twitter",
-      },
-      {
-        alt: "LinkenIn",
-      }
-    ]
-  }
-}
-</i18n>

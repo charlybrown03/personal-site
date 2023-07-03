@@ -1,44 +1,64 @@
+<script setup>
+import {
+  mdiFacebook,
+  mdiGithub,
+  mdiInstagram,
+  mdiLinkedin,
+  mdiTwitter
+} from '@mdi/js'
+
+const icons = [
+  {
+    ariaLabel: 'Facebook',
+    color: '#3b5999',
+    href: 'https://www.facebook.com/cmorenovillodre',
+    icon: mdiFacebook
+  },
+  {
+    ariaLabel: 'Instagram',
+    color: '#e4405f',
+    href: 'https://www.instagram.com/charlybrown_03/',
+    icon: mdiInstagram
+  },
+  {
+    ariaLabel: 'Github',
+    color: '#000000',
+    href: 'https://github.com/charlybrown03/',
+    icon: mdiGithub
+  },
+  {
+    ariaLabel: 'Twitter',
+    color: '#55acee',
+    href: 'https://twitter.com/charly_brown_03',
+    icon: mdiTwitter
+  },
+  {
+    ariaLabel: 'LinkenIn',
+    color: '#0077b5',
+    href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
+    icon: mdiLinkedin
+  }
+]
+</script>
+
 <template>
   <div class="social-media">
     <a
-      v-for="(icon, index) in icons"
-      :key="index"
-      :aria-label="icon.alt"
-      :href="icon.href"
+      v-for="item in icons"
+      :key="item.icon"
+      :aria-label="item.ariaLabel"
+      :href="item.href"
       target="_blank"
       rel="noopener"
-      @click="onClickLink(icon.eventLabel)"
     >
-      <font-awesome-icon
-        class="fa-3x"
-        :icon="icon.icon"
-      />
+      <svg class="social-media__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path :fill="item.color" :d="item.icon" />
+      </svg>
     </a>
   </div>
 </template>
 
-<script>
-import icons from './socialIcons.json'
-
-export default {
-  data () {
-    return { icons }
-  },
-
-  methods: {
-    onClickLink (eventLabel) {
-      this.$gtm.pushEvent({
-        event: 'gaEvent',
-        eventAction: 'Click Link',
-        eventCategory: 'Social Link',
-        eventLabel,
-      })
-    },
-  },
-}
-</script>
-
-<style lang="scss" scoped>
+<style lang="scss">
 .social-media {
   display: flex;
   justify-content: space-between;
@@ -46,27 +66,16 @@ export default {
   max-width: 500px;
   margin-top: 1.5rem;
   width: 100%;
-}
 
-.fa {
-  &-facebook-f {
-    @include icon-mixin($color-chambray);
-  }
+  &__icon {
+    transition: opacity 0.3s ease;
+    width: 3em;
 
-  &-instagram {
-    @include icon-mixin($color-cerise-red);
-  }
-
-  &-github {
-    @include icon-mixin($color-black);
-  }
-
-  &-twitter {
-    @include icon-mixin($color-picton-blue);
-  }
-
-  &-linkedin-in {
-    @include icon-mixin($color-deep-cerulean);
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: .7;
+    }
   }
 }
 </style>

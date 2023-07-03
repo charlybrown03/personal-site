@@ -1,9 +1,0 @@
-@mixin icon-mixin($color) {
-  color: $color;
-
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: .7;
-    }
-}

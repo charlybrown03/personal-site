@@ -1,27 +1,18 @@
+<script setup>
+import PersonalData from '@/components/PersonalData.vue'
+import SocialMedia from '@/components/SocialMedia.vue'
+
+useHead({
+  title: 'Carlos Moreno Villodre'
+})
+</script>
+
 <template>
-  <section class="container">
+  <div class="container">
     <personal-data />
     <social-media />
-  </section>
+  </div>
 </template>
-
-<script>
-import PersonalData from '@/components/PersonalData'
-import SocialMedia from '@/components/SocialMedia'
-
-export default {
-  components: {
-    PersonalData,
-    SocialMedia,
-  },
-
-  nuxtI18n: {
-    paths: {
-      es: '/',
-    },
-  },
-}
-</script>
 
 <style lang="scss">
 .container {
