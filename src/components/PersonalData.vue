@@ -7,7 +7,7 @@ const subtitle = 'Frontend Developer'
   <div class="personal-data">
     <nuxt-picture
       format="webp,jpeg"
-      :imgAttrs="{ alt: 'Personal Image', class:'personal-data__image' }"
+      :imgAttrs="{ alt: 'Personal Image', class:'personal-data__image', width: '250', height: '250' }"
       src="/images/profile.webp"
     />
     <h1 class="personal-data__title">
