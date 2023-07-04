@@ -5,15 +5,11 @@ const subtitle = 'Frontend Developer'
 
 <template>
   <div class="personal-data">
-    <picture>
-      <source srcset="~/assets/images/profile.webp" type="image/webp">
-      <source srcset="~/assets/images/profile.jpeg" type="image/jpeg">
-      <img
-        src="~/assets/images/profile.jpeg"
-        class="personal-data__image"
-        alt="Personal image"
-      >
-    </picture>
+    <nuxt-picture
+      format="webp,jpeg"
+      :imgAttrs="{ alt: 'Personal Image', class:'personal-data__image' }"
+      src="/images/profile.webp"
+    />
     <h1 class="personal-data__title">
       {{ title }}
     </h1>

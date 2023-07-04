@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.0.0-rc.1",
     "@types/node": "^18",
     "nuxt": "^3.6.1",
     "sass": "^1.63.6"
