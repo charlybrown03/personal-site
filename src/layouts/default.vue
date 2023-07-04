@@ -1,3 +1,11 @@
+<script setup>
+useHead({
+  htmlAttrs: {
+    lang: 'es-ES'
+  }
+})
+</script>
+
 <template>
   <div id="app">
     <slot />

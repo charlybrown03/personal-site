@@ -5,6 +5,9 @@ import SocialMedia from '@/components/SocialMedia.vue'
 useHead({
   title: 'Carlos Moreno Villodre'
 })
+useSeoMeta({
+  description: 'Personal Website'
+})
 </script>
 
 <template>
