@@ -1,62 +1,52 @@
-<script setup>
-import {
-  mdiFacebook,
-  mdiGithub,
-  mdiInstagram,
-  mdiLinkedin,
-  mdiTwitter
-} from '@mdi/js'
+---
+import { Icon } from 'astro-icon'
 
 const icons = [
   {
     ariaLabel: 'Facebook',
     color: '#3b5999',
     href: 'https://www.facebook.com/cmorenovillodre',
-    icon: mdiFacebook
+    icon: "facebook"
   },
   {
     ariaLabel: 'Instagram',
     color: '#e4405f',
     href: 'https://www.instagram.com/charlybrown_03/',
-    icon: mdiInstagram
+    icon: "instagram"
   },
   {
     ariaLabel: 'Github',
     color: '#000000',
     href: 'https://github.com/charlybrown03/',
-    icon: mdiGithub
+    icon: "github"
   },
   {
     ariaLabel: 'Twitter',
     color: '#55acee',
     href: 'https://twitter.com/charly_brown_03',
-    icon: mdiTwitter
+    icon: "twitter"
   },
   {
     ariaLabel: 'LinkenIn',
     color: '#0077b5',
     href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
-    icon: mdiLinkedin
+    icon: "linkedin"
   }
 ]
-</script>
+---
 
-<template>
-  <div class="social-media">
+<div class="social-media">
+  {icons.map((item) => (
     <a
-      v-for="item in icons"
-      :key="item.icon"
-      :aria-label="item.ariaLabel"
-      :href="item.href"
+      href={item.href}
+      aria-label={item.ariaLabel}
       target="_blank"
       rel="noopener"
     >
-      <svg class="social-media__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path :fill="item.color" :d="item.icon" />
-      </svg>
+      <Icon class="social-media__icon" pack="mdi" name={item.icon} style={{ color: item.color }} />
     </a>
-  </div>
-</template>
+  ))}
+</div>
 
 <style lang="scss">
 .social-media {

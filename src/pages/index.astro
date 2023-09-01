@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PersonalData from "../components/PersonalData.astro";
+import SocialMedia from "../components/SocialMedia.astro";
+---
+
+<Layout>
+  <div class="container">
+    <PersonalData />
+    <SocialMedia />
+  </div>
+</Layout>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1.5rem;
+    align-items: center;
+  }
+</style>
