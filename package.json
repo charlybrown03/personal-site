@@ -1,20 +1,24 @@
 {
   "name": "personal-site",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@nuxt/image": "^1.0.0-rc.1",
-    "@types/node": "^18",
-    "nuxt": "^3.6.1",
-    "sass": "^1.63.6"
+    "dev": "astro dev",
+    "lint": "eslint --fix && prettier . --write",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@mdi/js": "^7.2.96"
+    "astro": "^3.0.6",
+    "sass": "^1.66.1"
+  },
+  "devDependencies": {
+    "astro-icon": "^0.8.1",
+    "eslint": "^8.49.0",
+    "eslint-plugin-astro": "^0.29.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }
