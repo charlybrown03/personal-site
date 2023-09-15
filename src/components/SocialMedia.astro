@@ -1,71 +1,78 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon"
 
 const icons = [
   {
-    ariaLabel: 'Facebook',
-    color: '#3b5999',
-    href: 'https://www.facebook.com/cmorenovillodre',
+    ariaLabel: "Facebook",
+    color: "#3b5999",
+    href: "https://www.facebook.com/cmorenovillodre",
     icon: "facebook"
   },
   {
-    ariaLabel: 'Instagram',
-    color: '#e4405f',
-    href: 'https://www.instagram.com/charlybrown_03/',
+    ariaLabel: "Instagram",
+    color: "#e4405f",
+    href: "https://www.instagram.com/charlybrown_03/",
     icon: "instagram"
   },
   {
-    ariaLabel: 'Github',
-    color: '#000000',
-    href: 'https://github.com/charlybrown03/',
+    ariaLabel: "Github",
+    color: "#000000",
+    href: "https://github.com/charlybrown03/",
     icon: "github"
   },
   {
-    ariaLabel: 'Twitter',
-    color: '#55acee',
-    href: 'https://twitter.com/charly_brown_03',
+    ariaLabel: "Twitter",
+    color: "#55acee",
+    href: "https://twitter.com/charly_brown_03",
     icon: "twitter"
   },
   {
-    ariaLabel: 'LinkenIn',
-    color: '#0077b5',
-    href: 'https://www.linkedin.com/in/carlos-moreno-villodre-106936125/',
+    ariaLabel: "LinkenIn",
+    color: "#0077b5",
+    href: "https://www.linkedin.com/in/carlos-moreno-villodre-106936125/",
     icon: "linkedin"
   }
 ]
 ---
 
 <div class="social-media">
-  {icons.map((item) => (
-    <a
-      href={item.href}
-      aria-label={item.ariaLabel}
-      target="_blank"
-      rel="noopener"
-    >
-      <Icon class="social-media__icon" pack="mdi" name={item.icon} style={{ color: item.color }} />
-    </a>
-  ))}
+  {
+    icons.map((item) => (
+      <a
+        href={item.href}
+        aria-label={item.ariaLabel}
+        target="_blank"
+        rel="noopener"
+      >
+        <Icon
+          class="social-media__icon"
+          pack="mdi"
+          name={item.icon}
+          style={{ color: item.color }}
+        />
+      </a>
+    ))
+  }
 </div>
 
 <style lang="scss">
-.social-media {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
-  max-width: 500px;
-  margin-top: 1.5rem;
-  width: 100%;
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    max-width: 500px;
+    margin-top: 1.5rem;
+    width: 100%;
 
-  &__icon {
-    transition: opacity 0.3s ease;
-    width: 3em;
+    &__icon {
+      transition: opacity 0.3s ease;
+      width: 3em;
 
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: .7;
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.7;
+      }
     }
   }
-}
 </style>

@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "lint": "eslint --fix && prettier . --write",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -14,6 +15,10 @@
     "sass": "^1.66.1"
   },
   "devDependencies": {
-    "astro-icon": "^0.8.1"
+    "astro-icon": "^0.8.1",
+    "eslint": "^8.49.0",
+    "eslint-plugin-astro": "^0.29.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }
