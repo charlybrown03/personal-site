@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets"
+import image from "../assets/images/profile.jpeg"
 
 const title = "Carlos Moreno Villodre"
 const subtitle = "Frontend Developer"
@@ -11,7 +12,8 @@ const subtitle = "Frontend Developer"
     class="personal-data__image"
     width="250"
     height="250"
-    src="/images/profile.webp"
+    loading="eager"
+    src={image}
   />
   <h1 class="personal-data__title">
     {title}
